@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    
+    x:Class="Projet21092026_001.Vues.AuthentificationPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Authentification">
+
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="20"
+        VerticalOptions="Center">
+
+        <Label
+            Text="Authentification"
+            FontSize="28"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Entrez votre nom d'utilisateur :" />
+
+        <Entry
+            Text="{Binding Username}"
+            Placeholder="Username" />
+
+        <Button
+            Text="Se connecter"
+            Command="{Binding ValiderCommand}"
+            CommandParameter="{Binding Username}" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
